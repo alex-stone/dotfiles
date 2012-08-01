@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require 'fileutils'
+require 'open-uri'
+
+git_bundles = [
+  'git://github.com/mileszs/ack.vim.git',
+  'git://github.com/kien/ctrlp.vim.git',
+  'git://github.com/tpope/vim-rails.git',
+  'git://github.com/c9s/bufexplorer.git'
+]
+
+dir = File.expand_path('../bundle', __FILE__)
+
+puts 'Trashing bundle/ ...'
+
+FileUtils.rm_rf(dir)
+FileUtils.mkdir(dir)
+FileUtils.cd(dir)
+
+git_bundles.each do |url|
+  dir = url.split('/').last.sub(/\.git$/, '')
+  puts "*** Unpacking #{url} into #{dir}"
+  `git clone #{url} #{dir}`
+  FileUtils.rm_rf(File.join(dir, '.git'))
+end
