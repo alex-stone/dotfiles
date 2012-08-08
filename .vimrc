@@ -9,6 +9,7 @@ colorscheme jellybeans
 set nocompatible
 set nobackup
 set nowritebackup
+set noswapfile
 set hidden
 set history=1000
 set encoding=utf-8
