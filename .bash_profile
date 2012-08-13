@@ -10,3 +10,5 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/shar
 export EDITOR='/usr/bin/vim'
 
 eval "$(rbfu --init --auto)"
+
+alias be='bundle exec'
