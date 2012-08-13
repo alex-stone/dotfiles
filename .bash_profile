@@ -12,3 +12,4 @@ export EDITOR='/usr/bin/vim'
 eval "$(rbfu --init --auto)"
 
 alias be='bundle exec'
+alias bi='bundle install --standalone'
