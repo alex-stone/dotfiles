@@ -42,6 +42,8 @@ set formatoptions=qrn1
 set nolist
 set showmatch
 
+autocmd BufWritePre *.rb,*.js,*.erb,*.scss :%s/\s\+$//e
+
 let mapleader=','
 
 let g:ctrlp_map='<leader>f'
