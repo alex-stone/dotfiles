@@ -42,13 +42,16 @@ set formatoptions=qrn1
 set nolist
 set showmatch
 
-let mapleader=','
+let mapleader = ','
 
-let g:ctrlp_map='<leader>f'
-let g:ctrlp_max_height=20
-let g:ctrlp_custom_ignore = { 'dir': '/bundle$/' }
+let g:ctrlp_map = '<leader>f'
+let g:ctrlp_max_height = 20
+let g:ctrlp_custom_ignore = {
+  \ 'dir': 'bundle$\|\.git$\|test/dummy$\|\..*cache$\|vendor/cache$\|tmp$\|public/.*$',
+  \ 'file': 'MIT-LICENSE\|\.example$\|\.png$\|\.gif$\|\.eot$\|\.woff$\|\.ttf$\|\.svg$'
+  \ }
 
-let g:bufExplorerDefaultHelp=0
+let g:bufExplorerDefaultHelp = 0
 
 nnoremap / /\v
 nnoremap <leader><space> :noh<cr>
