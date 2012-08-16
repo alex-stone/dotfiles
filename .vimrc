@@ -42,12 +42,11 @@ set formatoptions=qrn1
 set nolist
 set showmatch
 
-autocmd BufWritePre *.rb,*.js,*.erb,*.scss :%s/\s\+$//e
-
 let mapleader=','
 
 let g:ctrlp_map='<leader>f'
 let g:ctrlp_max_height=20
+let g:ctrlp_custom_ignore = { 'dir': '/bundle$/' }
 
 let g:bufExplorerDefaultHelp=0
 
