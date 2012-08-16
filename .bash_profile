@@ -13,3 +13,5 @@ eval "$(rbfu --init --auto)"
 
 alias be='bundle exec'
 alias bi='bundle install --standalone'
+
+export ZENDESK_HOST=localhost.com
