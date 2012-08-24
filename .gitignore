@@ -3,3 +3,4 @@
 .viminfo
 bundle/
 .vim/.netrwhist
+.gitignore
