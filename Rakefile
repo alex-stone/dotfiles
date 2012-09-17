@@ -7,7 +7,6 @@ task :install do
   skip_all      = false
   overwrite_all = false
   backup_all    = false
-  puts linkables.inspect
 
   linkables.each do |linkable|
     overwrite = false
@@ -15,7 +14,6 @@ task :install do
 
     file   = linkable.split('/').last.split('.symlink').last
     target = "#{ENV["HOME"]}/.#{file}"
-puts target
 
     if File.exists?(target) || File.symlink?(target)
       unless skip_all || overwrite_all || backup_all
