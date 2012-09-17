@@ -1,6 +1,10 @@
+[hub]
+  protocol = https
 [user]
-	name  = 
-	email = 
+	name  = Craig Little
+	email = craiglttl@gmail.com
+[credential]
+  helper = osxkeychain
 [alias]
 	co   = checkout
   ci   = commit
@@ -10,11 +14,11 @@
   type = cat-file -t
   dump = cat-file -p
 [core]
-	editor   = vi
+	editor   = vim
 	autocrlf = input
 	safecrlf = true
-[github]
-	user = 
-	token = 
 [color]
-	ui = true
+  diff   = auto
+  status = auto
+  branch = auto
+	ui     = true
