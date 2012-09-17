@@ -34,6 +34,9 @@ puts target
     end
     `ln -s "$PWD/#{linkable}" "#{target}"`
   end
+
+  `git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle` unless Dir.exists?("#{ENV['HOME']}/.vim/bundle/vundle")
+  `vim +BundleInstall! +qall`
 end
 
 task :uninstall do
