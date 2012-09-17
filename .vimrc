@@ -1,6 +1,3 @@
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
-
 syntax on
 filetype plugin indent on
 
@@ -67,3 +64,5 @@ nnoremap <space> <c-d>
 vnoremap / /\v
 inoremap <leader><Tab> <C-n>
 map <leader>e :edit %%
+
+runtime vundle.vim
