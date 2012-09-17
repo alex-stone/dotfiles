@@ -1,4 +1,2 @@
-.DS_Store
-.netrc
-.viminfo
-.vim/.netrwhist
+dotfiles/vim.symlink/bundle/*
+!dotfiles/vim.symlink/bundle/vundle

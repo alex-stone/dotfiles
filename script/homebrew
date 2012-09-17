@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if test ! $(which brew)
+then
+  echo "  x You should probably install Homebrew first:"
+  echo "    https://github.com/mxcl/homebrew/wiki/installation"
+  exit
+else
+  echo "  + Homebrew found."
+fi
+
+brew install grc coreutils

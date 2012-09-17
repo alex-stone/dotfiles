@@ -2,8 +2,10 @@
 ## by craig little
 
 ### installation
-    cd ~ && mkdir etc
-    git clone git@github.com:craiglittle/dotfiles.git etc/dotfiles
-    ln -s etc/dotfiles/.[!.]* .
-    ./etc/dotfiles/.vim/update_bundles
-    
+    git clone https://github.com/craiglittle/dotfiles.git ~/.dotfiles
+    cd ~/.dotfiles
+    script/bootstrap
+
+### inspiration
+
+`script/bootstrap` borrowed from Zack Holman
