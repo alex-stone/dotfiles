@@ -1,4 +1,5 @@
 syntax on
+runtime vundle.vim
 filetype plugin indent on
 
 colorscheme jellybeans
@@ -64,5 +65,3 @@ nnoremap <space> <c-d>
 vnoremap / /\v
 inoremap <leader><Tab> <C-n>
 map <leader>e :edit %%
-
-runtime vundle.vim
