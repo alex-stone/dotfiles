@@ -67,3 +67,4 @@ nnoremap <space> <c-d>
 vnoremap / /\v
 inoremap <leader><Tab> <C-n>
 map <leader>e :edit %%
+map <leader>t :!ruby %<cr>
