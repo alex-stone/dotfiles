@@ -1,1 +1,5 @@
 gem: --no-ri --no-rdoc
+:verbose: true
+:update_sources: true
+:backtrace: false
+:benchmark: false
