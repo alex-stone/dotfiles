@@ -8,5 +8,4 @@ Bundle 'tpope/vim-bundler'
 
 Bundle 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-rails'
 Bundle 'c9s/bufexplorer'
