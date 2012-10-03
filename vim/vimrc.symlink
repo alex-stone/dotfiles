@@ -55,7 +55,6 @@ let g:bufExplorerDefaultHelp = 0
 
 nnoremap / /\v
 nnoremap <leader><space> :noh<cr>
-nnoremap ; :
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
