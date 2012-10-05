@@ -44,6 +44,7 @@ export NODE_PATH="/usr/local/lib/node"
 export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.dotfiles/bin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$PATH"
 
 eval "$(rbfu --init --auto)"
+eval "$(hub alias -s)"
 
 alias be='bundle exec'
 alias bi='bundle install --standalone'
