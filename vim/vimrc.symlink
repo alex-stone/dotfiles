@@ -11,6 +11,7 @@ set noswapfile
 set hidden
 set history=1000
 set encoding=utf-8
+set shell=sh
 
 set ruler
 set showcmd
