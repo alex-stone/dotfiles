@@ -5,6 +5,7 @@ Bundle 'gmarik/vundle'
 
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-bundler'
+Bundle 'kchmck/vim-coffee-script'
 
 Bundle 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
