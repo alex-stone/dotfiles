@@ -52,6 +52,8 @@ let g:ctrlp_custom_ignore = {
 
 let g:bufExplorerDefaultHelp = 0
 
+autocmd BufNewFile,BufRead *.json set ft=javascript
+
 nnoremap / /\v
 nnoremap <leader><space> :noh<cr>
 nnoremap <leader>w <C-w>v<C-w>l
