@@ -66,5 +66,5 @@ nnoremap <leader>a :BufExplorer<cr>
 nnoremap <space> <c-d>
 vnoremap / /\v
 inoremap <leader><Tab> <C-n>
-map <leader>e :edit %%
 map <leader>t :!ruby %<cr>
+map <C-n><C-n> :set invnumber<cr>
