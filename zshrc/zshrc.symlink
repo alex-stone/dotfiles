@@ -48,6 +48,9 @@ eval "$(hub alias -s)"
 
 alias be='bundle exec'
 alias bi='bundle install --standalone'
+alias classic='cd $HOME/code/work/zendesk'
+alias lotus='cd $HOME/code/work/zendesk_console'
+alias dotfiles='cd $HOME/.dotfiles'
 
 project_pwd() {
   echo $PWD | sed -e "s/\/Users\/$USER/~/" -e "s/~\/projects\/\([^\/]*\)\/current/\\1/" -e "s/~\/Sites\/\([^\/]*\)\/current/http:\/\/\\1/"
