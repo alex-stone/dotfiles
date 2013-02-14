@@ -25,3 +25,5 @@
 	ui     = true
 [push]
   default = current
+[branch]
+	autosetuprebase = always
