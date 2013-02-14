@@ -55,6 +55,7 @@ let g:bufExplorerDefaultHelp = 0
 
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.hdbs set ft=handlebars
+autocmd BufNewFile,BufRead *.handlebars set ft=handlebars
 
 nnoremap / /\v
 nnoremap <leader><space> :noh<cr>
