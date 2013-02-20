@@ -47,8 +47,9 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_max_height = 20
 let g:ctrlp_custom_ignore = {
   \ 'dir': 'bundle$\|\.git$\|test/dummy$\|spec/dummy$\|\..*cache$\|vendor/cache$\|tmp$\|public/.*$',
-  \ 'file': 'MIT-LICENSE\|\.example$\|\.png$\|\.gif$\|\.eot$\|\.woff$\|\.ttf$\|\.svg$'
+  \ 'file': 'eot$\|\.woff$\|\.ttf$\|\.svg$'
   \ }
+let g:ctrlp_user_command = 'ag --nogroup --nobreak --noheading --nocolor -g "" %s '
 
 let g:bufExplorerDefaultHelp = 0
 
