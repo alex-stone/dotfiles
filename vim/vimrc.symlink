@@ -70,6 +70,8 @@ nnoremap <C-l> <C-w>l
 nnoremap <leader>d <c-^>
 nnoremap <leader>a :BufExplorer<cr>
 nnoremap <space> <c-d>
+nnoremap + <C-W>+<cr>
+nnoremap - <C-W>-<cr>
 vnoremap / /\v
 inoremap <leader><Tab> <C-n>
 map <leader>t :!ruby %<cr>
