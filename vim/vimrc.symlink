@@ -41,7 +41,6 @@ set winwidth=84
 set formatoptions=qrn1
 set nolist
 set showmatch
-set tildeop
 
 let g:ctrlp_map = '<leader>f'
 let g:ctrlp_working_path_mode = 0
