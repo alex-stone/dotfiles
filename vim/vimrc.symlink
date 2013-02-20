@@ -50,6 +50,7 @@ let g:ctrlp_custom_ignore = {
   \ 'file': 'eot$\|\.woff$\|\.ttf$\|\.svg$'
   \ }
 let g:ctrlp_user_command = 'ag --nogroup --nobreak --noheading --nocolor -g "" %s '
+nnoremap <leader>g :CtrlPBuffer<cr>
 
 let g:bufExplorerDefaultHelp = 0
 
