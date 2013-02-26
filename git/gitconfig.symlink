@@ -28,3 +28,5 @@
   default = current
 [branch]
 	autosetuprebase = always
+[rerere]
+	enabled = true
