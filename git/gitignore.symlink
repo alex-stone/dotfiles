@@ -2,3 +2,4 @@
 .netrc
 .vim/.netrwhist
 bundle/
+.agignore
