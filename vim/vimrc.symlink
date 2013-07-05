@@ -77,5 +77,5 @@ nnoremap + <C-W>+<cr>
 nnoremap - <C-W>-<cr>
 vnoremap / /\v
 inoremap <leader><Tab> <C-n>
-map <leader>t :!ruby %<cr>
+map <leader>t :!bundle exec ruby %<cr>
 map <C-n><C-n> :set invnumber<cr>
