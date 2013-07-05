@@ -17,6 +17,7 @@ set ruler
 set showcmd
 set showmode
 set backspace=indent,eol,start
+set backspace=2 " stop backspace from producing ^?
 set wildmenu
 set wildmode=list:longest
 set ignorecase
