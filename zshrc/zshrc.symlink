@@ -48,6 +48,7 @@ eval "$(hub alias -s)"
 
 alias be='bundle exec'
 alias bi='bundle install --standalone'
+alias vi='vim'
 alias classic='cd $HOME/code/work/zendesk'
 alias lotus='cd $HOME/code/work/zendesk_console'
 alias dotfiles='cd $HOME/.dotfiles'
