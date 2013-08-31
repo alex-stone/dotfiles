@@ -1,31 +1,31 @@
 [github]
 	user = craiglittle
 [hub]
-  protocol = https
+	protocol = https
 [user]
-	name = Craig Little
+	name  = Craig Little
 	email = craiglttl@gmail.com
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
 [alias]
 	co   = checkout
-  ci   = commit
-  st   = status
-  br   = branch
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  lg   = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	ci   = commit
+	st   = status
+	br   = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	lg   = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [core]
-	editor   = vim
-	autocrlf = input
-	safecrlf = true
+	editor       = vim
+	autocrlf     = input
+	safecrlf     = true
 	excludesfile = /Users/clittle/.gitignore
 [color]
-  diff   = auto
-  status = auto
-  branch = auto
+	diff   = auto
+	status = auto
+	branch = auto
 	ui     = true
 [push]
-  default = current
+	default = current
 [branch]
 	autosetuprebase = always
 [rerere]
