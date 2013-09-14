@@ -1,3 +1,5 @@
+bindkey -e
+
 setopt transient_rprompt
 setopt prompt_subst
 
