@@ -8,12 +8,21 @@
 [credential]
 	helper = osxkeychain
 [alias]
-	co   = checkout
-	ci   = commit
-	st   = status
+	a    = add
 	br   = branch
+	ci   = commit
+	cim  = commit -m
+	cima = commit -am
+	co   = checkout
+	d    = diff
+	dc   = diff --cached
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	l    = log
 	lg   = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	p    = push
+	rb   = rebase
+	rsh  = reset --hard
+	st   = status -sb
 [core]
 	editor       = vim
 	autocrlf     = input
