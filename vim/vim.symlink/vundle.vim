@@ -8,7 +8,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'nono/vim-handlebars'
 
 Bundle 'kien/ctrlp.vim'
-Bundle 'craiglittle/bufexplorer'
+Bundle 'jlanzarotta/bufexplorer'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-surround'
 Bundle 'bling/vim-airline'
