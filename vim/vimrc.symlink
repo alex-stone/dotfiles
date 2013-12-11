@@ -38,11 +38,14 @@ set cursorline
 set laststatus=2
 set clipboard=unnamed
 set ttyfast
-set textwidth=79
+set textwidth=80
 set winwidth=84
 set formatoptions=qrn1
 set nolist
 set showmatch
+
+let &colorcolumn=join(range(81,999),',')
+hi colorcolumn ctermbg=232
 
 let g:netrw_banner=0
 
