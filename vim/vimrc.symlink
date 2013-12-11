@@ -50,13 +50,14 @@ hi colorcolumn ctermbg=232
 let g:netrw_banner=0
 
 let g:ctrlp_map = '<leader>f'
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_max_height = 20
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10,results:10'
+let g:ctrlp_reuse_window = 'netrw'
+let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
-  \ 'dir': 'bundle$\|\.git$\|test/dummy$\|spec/dummy$\|\..*cache$\|vendor/cache$\|tmp$\|public/.*$',
+  \ 'dir': 'bundle\/ruby$\|\.git$\|test/dummy$\|spec/dummy$\|\..*cache$\|vendor/cache$\|tmp$\|public/.*$',
   \ 'file': 'eot$\|\.woff$\|\.ttf$\|\.svg$'
   \ }
-let g:ctrlp_user_command = 'ag --nogroup --nobreak --noheading --nocolor -g "" %s '
+let g:ctrlp_user_command = 'ag --nogroup --nobreak --noheading --nocolor -g "" %s'
 nnoremap <leader>g :CtrlPBuffer<cr>
 
 let g:bufExplorerDefaultHelp = 0
