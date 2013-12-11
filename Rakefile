@@ -13,7 +13,13 @@ task :install do
     backup    = false
 
     file   = linkable.split('/').last.split('.symlink').last
-    target = "#{ENV["HOME"]}/.#{file}"
+
+    target =
+      if file == 'bin'
+        "#{ENV["HOME"]}/#{file}"
+      else
+        "#{ENV["HOME"]}/.#{file}"
+      end
 
     if File.exists?(target) || File.symlink?(target)
       unless skip_all || overwrite_all || backup_all
