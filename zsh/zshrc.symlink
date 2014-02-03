@@ -18,7 +18,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.dotfiles/bin:/usr/local/mysql
 eval "$(hub alias -s)"
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
-chruby ruby-1.9.3
+chruby ruby-2.0
 
 alias be='bundle exec'
 alias bi='bundle install --standalone'
