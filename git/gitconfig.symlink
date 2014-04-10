@@ -6,7 +6,7 @@
 	name  = Craig Little
 	email = craiglttl@gmail.com
 [credential]
-	helper = osxkeychain
+	helper = /opt/boxen/bin/boxen-git-credential
 [alias]
 	a    = add
 	br   = branch -v
@@ -30,7 +30,7 @@
 	editor       = vim
 	autocrlf     = input
 	safecrlf     = true
-	excludesfile = /Users/clittle/.gitignore
+	excludesfile = /opt/boxen/config/git/gitignore
 [color]
 	diff   = auto
 	status = auto
