@@ -29,6 +29,9 @@ alias classic='cd $HOME/code/work/zendesk'
 alias lotus='cd $HOME/code/work/zendesk_console'
 alias dotfiles='cd $HOME/.dotfiles'
 
+alias vpn-off='sudo mv /Applications/GlobalProtect{,OFF}.app && pkill -9 -f GlobalProtect'
+alias vpn-on='sudo mv /Applications/GlobalProtect{OFF,}.app'
+
 project_pwd() {
   echo $PWD | sed -e "s/\/Users\/$USER/~/" -e "s/~\/projects\/\([^\/]*\)\/current/\\1/" -e "s/~\/Sites\/\([^\/]*\)\/current/http:\/\/\\1/"
 }
