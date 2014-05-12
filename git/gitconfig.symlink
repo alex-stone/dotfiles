@@ -26,6 +26,7 @@
 	rsh  = reset --hard
 	sh   = show
 	st   = status -sb
+	rbl  = !git fetch && git rb origin/master
 [core]
 	editor       = vim
 	autocrlf     = input
