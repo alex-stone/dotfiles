@@ -9,4 +9,4 @@ else
   echo "  + Homebrew found."
 fi
 
-brew install grc coreutils
+brew install grc coreutils ag
