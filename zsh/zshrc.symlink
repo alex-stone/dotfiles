@@ -1,7 +1,5 @@
 bindkey -e
 
-source /opt/boxen/env.sh
-
 setopt transient_rprompt
 setopt prompt_subst
 
@@ -19,7 +17,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.dotfiles/bin:/usr/local/mysql
 
 eval "$(hub alias -s)"
 
-source /opt/boxen/homebrew/opt/chruby/share/chruby/chruby.sh
+source /usr/local/share/chruby/chruby.sh
 chruby ruby-2.0
 
 alias be='bundle exec'
