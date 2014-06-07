@@ -1,3 +1,3 @@
 #! /bin/sh
 
-git "$@"
+/usr/local/bin/git "$@"
