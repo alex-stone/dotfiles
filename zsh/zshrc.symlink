@@ -23,8 +23,6 @@ chruby ruby-2.1
 alias be='bundle exec'
 alias bi='bundle install --standalone'
 alias vi='vim'
-alias classic='cd $HOME/code/work/zendesk'
-alias lotus='cd $HOME/code/work/zendesk_console'
 alias dotfiles='cd $HOME/.dotfiles'
 
 alias vpn-off='sudo mv /Applications/GlobalProtect{,OFF}.app && pkill -9 -f GlobalProtect'
