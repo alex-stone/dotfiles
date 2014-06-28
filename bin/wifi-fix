@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# The purpose of this program script is to find the default gateway
+# and continuously ping it every 15 seconds, in order to workaround
+# Apple's BUG in their Wifi (AES) framework/driver, where Wifi
+# connectivity is lost without continuous packet exchange.
+#
+# This BUG has been persistent in iOS 6 onward. It was also introduced
+# with release of MacOS Mavericks 10.9.x.
+#
+# Reference: https://discussions.apple.com/message/24119041#24119041
+
+# Find out IPv4 default gateway in route table.
+gw=`netstat -rnfinet | grep default | awk '{print $2}'`
+
+# If not found in route table, print message and exit.
+test -z "${gw}" && echo "No (default) Gateway found." && exit 1
+
+# ping the gateway every 15 seconds
+ping -i 15 ${gw} > /dev/null
