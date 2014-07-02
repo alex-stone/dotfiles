@@ -1,8 +1,8 @@
 runtime vundle.vim
 
-colorscheme jellybeans
-
 syntax on
+
+colorscheme jellybeans
 
 set nobackup
 set nowritebackup
@@ -43,7 +43,7 @@ set nolist
 set showmatch
 
 let &colorcolumn=join(range(81,999),',')
-hi colorcolumn ctermbg=232
+hi colorcolumn ctermbg=233
 
 let g:netrw_banner=0
 
