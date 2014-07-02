@@ -1,10 +1,9 @@
-syntax on
 runtime vundle.vim
-filetype plugin indent on
 
 colorscheme jellybeans
 
-set nocompatible
+syntax on
+
 set nobackup
 set nowritebackup
 set noswapfile
