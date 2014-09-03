@@ -9,4 +9,4 @@ else
   echo "  + Homebrew found."
 fi
 
-brew install grc coreutils ag
+brew install git grc coreutils ag zsh vim hub chruby ruby-install
