@@ -6,7 +6,7 @@
 	name  = Craig Little
 	email = craiglttl@gmail.com
 [credential]
-	helper = /opt/boxen/bin/boxen-git-credential
+	helper = osxkeychain
 [alias]
 	a    = add
 	br   = branch -v
