@@ -44,3 +44,5 @@
 	autosetuprebase = always
 [rerere]
 	enabled = true
+[credential]
+	helper = osxkeychain
