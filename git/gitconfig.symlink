@@ -5,8 +5,6 @@
 [user]
 	name  = Craig Little
 	email = craiglttl@gmail.com
-[credential]
-	helper = osxkeychain
 [alias]
 	a    = add
 	br   = branch -v
