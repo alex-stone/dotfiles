@@ -19,7 +19,6 @@ chruby ruby-2.1
 
 alias be='bundle exec'
 alias bi='bundle install --standalone'
-alias vim='/usr/local/bin/vim'
 alias vi='vim'
 alias dotfiles='cd $HOME/.dotfiles'
 
