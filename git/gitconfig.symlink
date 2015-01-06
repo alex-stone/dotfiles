@@ -7,11 +7,13 @@
 	email = craiglttl@gmail.com
 [alias]
 	a    = add
+	amd  = commit --amend --no-edit
 	br   = branch -v
 	ci   = commit
 	cim  = commit -m
 	cima = commit -am
 	co   = checkout
+	cp   = cherry-pick
 	d    = diff
 	dc   = diff --cached
 	f    = fetch
