@@ -5,9 +5,6 @@ setopt prompt_subst
 
 unsetopt correct_all
 
-export EDITOR='vim'
-export TERM='xterm-256color'
-
 ENV=~/.env
 export ENV
 . $ENV
@@ -17,9 +14,6 @@ PATH="$PATH:$HOME/bin"
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 chruby ruby-2.2
 
-alias be='bundle exec'
-alias bi='bundle install --standalone'
-alias vi='vim'
 alias dotfiles='cd $HOME/.dotfiles'
 
 alias vpn-off='sudo mv /Applications/GlobalProtect{,OFF}.app && pkill -9 -f GlobalProtect'
