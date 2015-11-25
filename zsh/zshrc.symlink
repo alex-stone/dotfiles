@@ -14,8 +14,6 @@ PATH="$PATH:$HOME/bin"
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 chruby ruby-2.2
 
-alias dotfiles='cd $HOME/.dotfiles'
-
 alias vpn-off='sudo mv /Applications/GlobalProtect{,OFF}.app && pkill -9 -f GlobalProtect'
 alias vpn-on='sudo mv /Applications/GlobalProtect{OFF,}.app'
 
