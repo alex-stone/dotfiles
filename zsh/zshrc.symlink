@@ -15,7 +15,7 @@ export ENV
 PATH="$PATH:$HOME/bin"
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
-chruby ruby-2.1
+chruby ruby-2.2
 
 alias be='bundle exec'
 alias bi='bundle install --standalone'
