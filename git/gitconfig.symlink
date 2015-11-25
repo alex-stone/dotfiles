@@ -29,10 +29,9 @@
 	st   = status -sb
 	rbl  = !git fetch && git rb origin/master
 [core]
-	editor       = vim
-	autocrlf     = input
-	safecrlf     = true
-	excludesfile = /opt/boxen/config/git/gitignore
+	editor   = vim
+	autocrlf = input
+	safecrlf = true
 [color]
 	diff   = auto
 	status = auto
