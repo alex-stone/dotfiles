@@ -6,6 +6,5 @@ rake install
 
 chsh -s /bin/zsh
 
-ruby-install ruby 1.9
 ruby-install ruby 2.0
 ruby-install ruby 2.1
