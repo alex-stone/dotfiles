@@ -14,9 +14,6 @@ PATH="$PATH:$HOME/bin"
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 chruby ruby-2.2
 
-alias vpn-off='sudo mv /Applications/GlobalProtect{,OFF}.app && pkill -9 -f GlobalProtect'
-alias vpn-on='sudo mv /Applications/GlobalProtect{OFF,}.app'
-
 project_pwd() {
   echo $PWD | sed -e "s/\/Users\/$USER/~/" -e "s/~\/projects\/\([^\/]*\)\/current/\\1/" -e "s/~\/Sites\/\([^\/]*\)\/current/http:\/\/\\1/"
 }
