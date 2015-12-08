@@ -11,7 +11,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'nono/vim-handlebars'
 
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
