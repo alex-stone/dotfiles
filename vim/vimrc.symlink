@@ -66,10 +66,6 @@ let g:airline_theme='jellybeans'
 
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
-autocmd BufNewFile,BufRead *.json set ft=javascript
-autocmd BufNewFile,BufRead *.hdbs set ft=handlebars
-autocmd BufNewFile,BufRead *.handlebars set ft=handlebars
-
 nnoremap / /\v
 nnoremap <leader><space> :noh<cr>
 nnoremap <leader>w <C-w>v<C-w>l
