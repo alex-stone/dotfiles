@@ -14,6 +14,7 @@ Plugin 'nono/vim-handlebars'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-airline'
 
