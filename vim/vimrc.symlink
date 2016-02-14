@@ -41,6 +41,7 @@ set winwidth=84
 set formatoptions=qrn1
 set nolist
 set showmatch
+set re=1
 
 let &colorcolumn=join(range(81,999),',')
 hi colorcolumn ctermbg=233
