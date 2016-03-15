@@ -5,14 +5,29 @@ setopt prompt_subst
 
 unsetopt correct_all
 
+SECRET_ENV=~/.dotfiles/secret/env
+export SECRET_ENV
+. $SECRET_ENV
+
 ENV=~/.env
 export ENV
 . $ENV
 
-PATH="$PATH:$HOME/bin"
+export LS_COLORS="di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:su=37;41:sg=30;43:tw=30;42:ow=34;42:st=37;44:ex=01;32";
+export LSCOLORS="ExGxFxDxCxDxDxhbhdacEc";
+#
+# colored completion - use my LS_COLORS
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-chruby ruby-2.3
+export PATH="$PATH:$HOME/bin"
+
+export NODE_PATH="/usr/local/lib/node"
+
+# Add dotfiles bin to path
+export PATH="$HOME/.dotfiles/bin.symlink:$PATH"
+
+# Add rbenv shims to path
+export PATH="$HOME/.rbenv/shims:$PATH"
 
 autoload -Uz vcs_info
 

@@ -1,5 +1,3 @@
-PS1="\W: "
-
 ENV=~/.env
 export ENV
 . $ENV

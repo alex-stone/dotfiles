@@ -1,10 +1,7 @@
-[github]
-	user = craiglittle
+[include]
+	path = .dotfiles/secret/.gitconfig
 [hub]
 	protocol = https
-[user]
-	name  = Craig Little
-	email = craiglttl@gmail.com
 [alias]
 	a    = add
 	amd  = commit --amend --no-edit
