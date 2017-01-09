@@ -45,3 +45,5 @@
   enabled = true
 [credential]
   helper = osxkeychain
+[gpg]
+  program = gpg2
