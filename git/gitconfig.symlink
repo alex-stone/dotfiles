@@ -1,44 +1,47 @@
 [include]
-	path = .dotfiles/secret/.gitconfig
+  path = .dotfiles/secret/.gitconfig
 [hub]
-	protocol = https
+  protocol = https
 [alias]
-	a    = add
-	amd  = commit --amend --no-edit
-	br   = branch -v
-	ci   = commit
-	cim  = commit -m
-	cima = commit -am
-	co   = checkout
-	cp   = cherry-pick
-	d    = diff
-	dc   = diff --cached
-	f    = fetch
-	h    = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-	l    = log
-	lg   = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	p    = push
-	pl   = pull
-	rb   = rebase
-	rs   = reset
-	rsh  = reset --hard
-	sh   = show
-	st   = status -sb
-	rbl  = !git fetch && git rb origin/master
+  a    = add
+  amd  = commit --amend --no-edit
+  br   = branch -v
+  cbr  = name-rev --name-only HEAD
+  ci   = commit
+  cim  = commit -m
+  cima = commit -am
+  co   = checkout
+  cp   = cherry-pick
+  d    = diff
+  dc   = diff --cached
+  f    = fetch
+  h    = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  l    = log
+  lg   = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  p    = push
+  pl   = pull
+  rb   = rebase
+  rs   = reset
+  rsh  = reset --hard
+  sh   = show
+  st   = status -sb
+  rbl  = !git fetch && git rb origin/master
 [core]
-	editor   = vim
-	autocrlf = input
-	safecrlf = true
+  editor   = vim
+  autocrlf = input
+  safecrlf = true
 [color]
-	diff   = auto
-	status = auto
-	branch = auto
-	ui     = true
+  diff   = auto
+  status = auto
+  branch = auto
+  ui     = true
+[commit]
+  gpgsign = true
 [push]
-	default = current
+  default = current
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 [rerere]
-	enabled = true
+  enabled = true
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
