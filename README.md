@@ -1,11 +1,9 @@
 # dotfiles
-## by craig little
+## by alex stone
+
+Inspired by Craig Little
 
 ### installation
-    git clone https://github.com/craiglittle/dotfiles.git ~/.dotfiles
+    git clone https://github.com/alex-stone/dotfiles.git ~/.dotfiles
     cd ~/.dotfiles
     script/bootstrap
-
-### inspiration
-
-`script/bootstrap` borrowed from Zack Holman
