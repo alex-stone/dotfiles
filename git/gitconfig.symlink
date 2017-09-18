@@ -49,3 +49,4 @@
   program = gpg2
 [diff]
   compactionHeuristic = true
+  indentHeuristic = on
