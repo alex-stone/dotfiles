@@ -35,8 +35,6 @@
   status = auto
   branch = auto
   ui     = true
-[commit]
-  gpgsign = true
 [push]
   default = current
 [branch]
@@ -45,8 +43,6 @@
   enabled = true
 [credential]
   helper = osxkeychain
-[gpg]
-  program = gpg2
 [diff]
   compactionHeuristic = true
   indentHeuristic = on
