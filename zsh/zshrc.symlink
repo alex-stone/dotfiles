@@ -31,7 +31,7 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 
 autoload -Uz vcs_info
 
-zstyle ':vcs_info:*' formats '%F{0}%r/%S %F{cyan}%b %F{yellow}%m%u%c%f'
+zstyle ':vcs_info:*' formats '%F{bg-red}%r/%F{cyan}%b %F{yellow}%m%u%c%f'
 zstyle ':vcs_info:*' enable git
 
 precmd() { vcs_info }
