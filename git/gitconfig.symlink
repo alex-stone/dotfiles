@@ -6,6 +6,7 @@
   a    = add
   amd  = commit --amend --no-edit
   br   = branch -v
+  brm  = branch --merged master
   cbr  = name-rev --name-only HEAD
   ci   = commit
   cim  = commit -m
