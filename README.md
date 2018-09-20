@@ -1,9 +1,9 @@
-# dotfiles
-## by alex stone
+# Dotfiles
+## by Alex Stone
 
 Inspired by Craig Little
 
-### installation
+### Installation
     git clone https://github.com/alex-stone/dotfiles.git ~/.dotfiles
     cd ~/.dotfiles
     script/bootstrap
