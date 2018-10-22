@@ -85,3 +85,28 @@ inoremap jk <esc>
 inoremap kj <esc>
 map <leader>t :!bundle exec ruby %<cr>
 map <C-n><C-n> :set invnumber<cr>
+
+" Vundle configuration
+set nocompatible
+set rtp+=~/.vim/bundle/Vundle.vim
+
+filetype off
+
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'nono/vim-handlebars'
+
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+call vundle#end()
+
+filetype plugin indent on
