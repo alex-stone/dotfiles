@@ -83,6 +83,5 @@ vnoremap / /\v
 inoremap <leader><Tab> <C-n>
 inoremap jk <esc>
 inoremap kj <esc>
-inoremap <esc> <nop>
 map <leader>t :!bundle exec ruby %<cr>
 map <C-n><C-n> :set invnumber<cr>
