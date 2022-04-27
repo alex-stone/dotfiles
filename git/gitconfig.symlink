@@ -16,7 +16,7 @@
   d    = diff
   dc   = diff --cached
   f    = fetch
-  h    = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  h    = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   l    = log
   lg   = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   p    = push
