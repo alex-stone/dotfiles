@@ -29,6 +29,9 @@ export PATH="$HOME/.dotfiles/bin.symlink:$PATH"
 # Add rbenv shims to path
 export PATH="$HOME/.rbenv/shims:$PATH"
 
+# Add go bin to path
+export PATH="$HOME/go/bin:$PATH"
+
 autoload -Uz vcs_info
 
 zstyle ':vcs_info:*' formats '%F{bg-red}%r/%F{cyan}%b %F{yellow}%m%u%c%f'
