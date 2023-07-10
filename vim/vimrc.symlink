@@ -36,8 +36,8 @@ set cursorline
 set laststatus=2
 set clipboard=unnamed
 set ttyfast
-set textwidth=80
-set winwidth=84
+set textwidth=100
+set winwidth=104
 set formatoptions=qrn1
 set nolist
 set showmatch
@@ -64,6 +64,9 @@ let g:bufExplorerDefaultHelp = 0
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 let g:airline_theme='jellybeans'
+
+" Configure goimports
+let g:goimports_cmd = 'gosimports'
 
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
@@ -107,6 +110,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'fatih/vim-go'
+Plugin 'mattn/vim-goimports'
+Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()
 

@@ -41,3 +41,7 @@ precmd() { vcs_info }
 
 PROMPT=$'%{\e[0;%(?.32.31)m%}>>%{\e[0m%} '
 RPROMPT='${vcs_info_msg_0_}%{$reset_color%}'
+
+alias docker-kill-all='docker kill $(docker ps -q)'
+
+alias docker-rm-all-containers='docker rm -vf $(docker ps -aq)'

@@ -5,7 +5,7 @@
 [alias]
   a    = add
   amd  = commit --amend --no-edit
-  br   = branch -v
+  br   = branch -v --sort=-committerdate --format='%(HEAD) %(align:width=60)%(color:yellow)%(refname:short)%(color:reset)%(end) %(contents:subject) (authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
   brm  = branch --merged master
   dbrm = "!git branch --merged | grep  -v '\\*\\|master\\|main' | xargs -n 1 -r git branch -d"
   # Prune any local squashed-and-merged branches.
@@ -54,3 +54,7 @@
 [diff]
   compactionHeuristic = true
   indentHeuristic = on
+[rebase]
+  autosquash = true
+[merge]
+  conflictstyle = diff3
