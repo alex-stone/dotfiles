@@ -7,6 +7,13 @@
   amd  = commit --amend --no-edit
   br   = branch -v
   brm  = branch --merged master
+  dbrm = "!git branch --merged | grep  -v '\\*\\|master\\|main' | xargs -n 1 -r git branch -d"
+  # Prune any local squashed-and-merged branches.
+  # Usage:
+  #   git prune-squash-merged
+  #   git prune-squash-merged -n
+  #   git prune-squash-merged --dry-run
+  prune-squash-merged = "!bash $HOME/.dotfiles/script/git_prune_squash_merged.sh"
   cbr  = name-rev --name-only HEAD
   ci   = commit
   cim  = commit -m
