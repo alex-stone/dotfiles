@@ -2,9 +2,54 @@
 
 . script/homebrew
 
+# Create machine-local secret files if they don't exist yet.
+# The secret/ dir is gitignored — fill these in with real values per machine.
+mkdir -p secret
+
+if [ ! -f secret/env ]; then
+  cat > secret/env <<'EOF'
+# Machine-local environment variables & secrets. NOT tracked in git.
+# Sourced early by zsh/zshrc.symlink. Pure `export` statements only.
+#
+# Example:
+# export SOME_API_KEY=...
+EOF
+  echo "Created secret/env — fill in your secrets."
+fi
+
+if [ ! -f secret/zshrc ]; then
+  cat > secret/zshrc <<'EOF'
+# Machine-local interactive shell config: aliases & functions. NOT tracked in git.
+# Sourced near the end of zsh/zshrc.symlink (after PATH/tool setup).
+#
+# Example:
+# alias foo='bar'
+EOF
+  echo "Created secret/zshrc — add your aliases / functions."
+fi
+
+if [ ! -f secret/vimrc ]; then
+  cat > secret/vimrc <<'EOF'
+" Machine-local vim config. NOT tracked in git.
+" Sourced from vim/vimrc.symlink.
+EOF
+  echo "Created secret/vimrc — add your machine-local vim config."
+fi
+
+if [ ! -f secret/.gitconfig ]; then
+  cat > secret/.gitconfig <<'EOF'
+# Machine-local git identity & signing. NOT tracked in git.
+# Included from git/gitconfig.symlink.
+[user]
+	name =
+	email =
+	signingKey =
+[commit]
+	gpgsign = false
+EOF
+  echo "Created secret/.gitconfig — fill in your identity."
+fi
+
 rake install
 
 chsh -s /bin/zsh
-
-rbenv install --skip-existing 2.7.6
-rbenv install --skip-existing 3.1.2

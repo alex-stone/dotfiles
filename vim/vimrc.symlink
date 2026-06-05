@@ -68,6 +68,8 @@ let g:airline_theme='jellybeans'
 " Configure goimports
 let g:goimports_cmd = 'gosimports'
 
+let go_build_tags='integration'
+
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 nnoremap / /\v
@@ -112,7 +114,18 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'fatih/vim-go'
 Plugin 'mattn/vim-goimports'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'pangloss/vim-javascript'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'maxmellon/vim-jsx-pretty'
+Plugin 'github/copilot.vim'
+Plugin 'sourcegraph/sg.nvim'
+
 
 call vundle#end()
 
 filetype plugin indent on
+
+" Machine-local vim config (not tracked in git)
+if filereadable(expand("~/.dotfiles/secret/vimrc"))
+  execute 'source' expand("~/.dotfiles/secret/vimrc")
+endif

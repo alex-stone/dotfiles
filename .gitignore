@@ -1,2 +1,8 @@
 /vim/vim.symlink/bundle/
 /secret
+
+# vim netrw browsing history (leaks local paths)
+.netrwhist
+
+# accidental recursive self-symlink
+/vim/vim.symlink/vim.symlink
